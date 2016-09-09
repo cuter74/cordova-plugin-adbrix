@@ -41,10 +41,13 @@ public class AdBrixPlugin  extends CordovaPlugin {
         Log.v(LOG_TAG, "adBrixPlugin : execute " + action);
         this.callbackContext = callbackContext;
         if(action.equals("end")){
-
-        }else if(action.equals("retention")){
+        	Log.v(LOG_TAG, "adBrixPlugin : " + action);
+        }else if(action.equals("menuName")){
+        	/*
             final String menuName = options.getString(0);
             IgawAdbrix.retention(menuName);
+            */
+        	Log.v(LOG_TAG, "adBrixPlugin : " + action);
         }else if(action.equals("age")){
 
         }else if(action.equals("gender")){
