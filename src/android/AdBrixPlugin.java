@@ -6,6 +6,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import com.igaworks.IgawCommon;
+import com.igaworks.adbrix.IgawAdbrix;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;

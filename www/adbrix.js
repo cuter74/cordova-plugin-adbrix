@@ -4,11 +4,7 @@
 
 var exec = require('cordova/exec');
 
-function Adbrix(){
-    var menuName = function (menuName,callback) {
-        exec(callback,function(err){console.log("adbrix error!");},"AdBrixPlugin","menuName",[menuName]);
-    }
-}
+function Adbrix(){}
 
 Adbrix.prototype.endSession = function(callback) {
     exec(callback,function(err){console.log("adbrix error!");},"AdBrixPlugin","end",[]);
