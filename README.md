@@ -1,4 +1,4 @@
-cordova-plugin-market
+cordova-plugin-adbrix
 =====================
 
 Cordova (PhoneGap) 3.0+ plugin to open an application on native Marketplace app, aka Google Play for Android or App Store for iOS.

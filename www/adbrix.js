@@ -14,5 +14,8 @@ Adbrix.prototype.endSession = function(callback) {
     exec(callback,function(err){console.log("adbrix error!");},"AdBrixPlugin","end",[]);
 };
 
+Adbrix.prototype.menuName = function (menuName,callback) {
+    exec(callback,function(err){console.log("adbrix error!");},"AdBrixPlugin","menuName",[menuName]);
+}
 var adbrix = new Adbrix();
 module.exports = adbrix;
