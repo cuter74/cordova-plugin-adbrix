@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-adbrix" version="0.1.1">
+    <name>adBrix</name>
+    <description>adBrix tool</description>
+    <license>Apache 2.0</license>
+    <keywords>adbrix,tracking,analytics</keywords>
+    <js-module src="www/adbrix.js" name="Adbrix">
+        <clobbers target="cordova.adbrix" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Adbrix">
+                <param name="android-package" value="com.mscbrain.lib.tracking.AdBrixPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
+    </platform>
+
+</plugin>
