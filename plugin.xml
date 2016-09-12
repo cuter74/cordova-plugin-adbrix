@@ -14,6 +14,27 @@
                 <param name="android-package" value="com.mscbrain.lib.tracking.AdBrixPlugin"/>
             </feature>
         </config-file>
+         <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET"/>
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+			<!-- 옵셔널한 값입니다. -->
+			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         </config-file>
+         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+         	<meta-data android:name="igaworks_app_key" android:value="@string/adbrix_key" />
+			<meta-data android:name="igaworks_hash_key" android:value="@string/adbrix_hashkey" />
+			<receiver android:name="com.igaworks.IgawReceiver" android:exported="true">
+	            <intent-filter>
+	                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+	            </intent-filter>
+        	</receiver>
+         </config-file>
+	     <config-file target="res/values/adbrix_strings.xml" parent="/*">
+            <string name="adbrix_key">$ADBRIX_KEY</string>
+            <string name="adbrix_hashkey">$ADBRIX_HASHKEY</string>
+	     </config-file>
+         <source-file src="src/android/adbrix_strings.xml" target-dir="res/values" />
         <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
     </platform>
 
