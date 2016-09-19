@@ -25,7 +25,7 @@
          <config-file target="AndroidManifest.xml" parent="/manifest/application">
          	<meta-data android:name="igaworks_app_key" android:value="@string/adbrix_key" />
 			<meta-data android:name="igaworks_hash_key" android:value="@string/adbrix_hashkey" />
-			<receiver android:name="com.igaworks.IgawReceiver" android:exported="true">
+			<receiver android:name="com.mscbrain.lib.tracking.MultipleInstallReceiver" android:exported="true">
 	            <intent-filter>
 	                <action android:name="com.android.vending.INSTALL_REFERRER"/>
 	            </intent-filter>
@@ -36,7 +36,8 @@
             <string name="adbrix_hashkey">$ADBRIX_HASHKEY</string>
 	     </config-file>
          <source-file src="src/android/adbrix_strings.xml" target-dir="res/values" />
-        <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
+         <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
+         <source-file src="src/android/MultipleInstallReceiver.java" target-dir="src/com/mscbrain/lib/tracking" />
     </platform>
 
 </plugin>
