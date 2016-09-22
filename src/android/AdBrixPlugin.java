@@ -50,6 +50,9 @@ public class AdBrixPlugin  extends CordovaPlugin {
 
         }else if(action.equals("gender")){
 
+        }else if(action.equals("member")){
+        	Log.v(LOG_TAG, "adBrixPlugin :  " + action);
+        	
         }
         return true;
     }
