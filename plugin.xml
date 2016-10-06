@@ -39,5 +39,11 @@
          <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
          <source-file src="src/android/MultipleInstallReceiver.java" target-dir="src/com/mscbrain/lib/tracking" />
     </platform>
-
+	<platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Adbrix">
+                <param name="ios-package" value="Adbrix" />
+            </feature>
+        </config-file>
+    </platform>
 </plugin>
