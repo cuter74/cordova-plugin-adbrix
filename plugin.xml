@@ -45,5 +45,7 @@
                 <param name="ios-package" value="Adbrix" />
             </feature>
         </config-file>
+        <source-file src="src/ios/Adbrix.m" />
+        <header-file src="src/ios/Adbrix.h" />
     </platform>
 </plugin>
