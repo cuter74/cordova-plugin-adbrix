@@ -11,10 +11,17 @@ Adbrix.prototype.endSession = function(callback) {
 };
 
 Adbrix.prototype.menuName = function (menuName,callback) {
-    exec(callback,function(err){console.log("adbrix error!");},"Adbrix","retention",[menuName]);
-}
+    exec(callback,function(err){console.log("adbrix menu error!");},"Adbrix","retention",[menuName]);
+};
 Adbrix.prototype.member = function (menuName,callback) {
-    exec(callback,function(err){console.log("adbrix error!");},"Adbrix","member",[]);
-}
+    exec(callback,function(err){console.log("adbrix member error!");},"Adbrix","member",[]);
+};
+Adbrix.prototype.age = function (age,callback) {
+    exec(callback,function(err){console.log("adbrix age error!");},"Adbrix","age",[age]);
+};
+Adbrix.prototype.gender = function (gender,callback) {
+    exec(callback,function(err){console.log("adbrix gender error!");},"Adbrix","gender",[gender]);
+};
 var adbrix = new Adbrix();
+
 module.exports = adbrix;

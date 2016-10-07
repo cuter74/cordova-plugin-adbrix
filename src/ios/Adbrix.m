@@ -13,9 +13,10 @@
 
 -(void) retention :(CDVInvokedUrlCommand*)command
 {
-    NSMutableDictionary *options = [[command.arguments lastObject] mutableCopy];
-    NSString* menuName = options[@"menuName"];
+    NSString* menuName  = [command.arguments objectAtIndex:0];
+
     NSLog(@"menuName============!!==%@", menuName);
+    [AdBrix retention:menuName];
     
 }
 

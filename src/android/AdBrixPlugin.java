@@ -47,9 +47,19 @@ public class AdBrixPlugin  extends CordovaPlugin {
             final String menuName = options.getString(0);
             IgawAdbrix.retention(menuName);
         }else if(action.equals("age")){
-
+            Log.v(LOG_TAG, "adBrixPlugin :  " + action);
+            final int age = options.getInt(0);
+            Log.v(LOG_TAG, "adBrixPlugin age :  " + action);
+            IgawCommon.setAge(age);
         }else if(action.equals("gender")){
-
+            Log.v(LOG_TAG, "adBrixPlugin :  " + action);
+            final String gender = options.getString(0);
+            Log.v(LOG_TAG, "adBrixPlugin gender :  " + gender);
+            if(gender.equals("F")){
+                IgawCommon.setGender(IgawCommon.Gender.FEMALE);
+            }else {
+                IgawCommon.setGender(IgawCommon.Gender.MALE);
+            }
         }else if(action.equals("member")){
         	Log.v(LOG_TAG, "adBrixPlugin :  " + action);
         	
