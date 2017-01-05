@@ -12,6 +12,8 @@
 @interface Adbrix : CDVPlugin
 
 - (void) retention:(CDVInvokedUrlCommand*)command;
-
+- (void) age:(CDVInvokedUrlCommand*)command;
+- (void) gender:(CDVInvokedUrlCommand*)command;
+- (void) member:(CDVInvokedUrlCommand*)command;
 @end
 

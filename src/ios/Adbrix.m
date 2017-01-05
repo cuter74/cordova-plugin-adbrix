@@ -19,5 +19,24 @@
     [AdBrix retention:menuName];
     
 }
+-(void) age :(CDVInvokedUrlCommand*)command
+{
+    NSInteger* age  = [[command.arguments objectAtIndex:0] intValue];
+    
+ //   NSLog(@"menuName============!!==%@", [age stringValue]);
+    [IgaworksCore setAge:age];
+    
+}
+-(void) gender:(CDVInvokedUrlCommand *)command
+{
+    NSString* gender  = [command.arguments objectAtIndex:0];
+    
+    NSLog(@"menuName============!!==%@", gender);
+    if([gender isEqualToString:@"M"]==YES)
+        [IgaworksCore setGender:IgaworksCoreGenderMale];
+    else
+        [IgaworksCore setGender:IgaworksCoreGenderFemale];
 
+    
+}
 @end

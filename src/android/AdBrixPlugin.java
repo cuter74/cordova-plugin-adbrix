@@ -49,7 +49,7 @@ public class AdBrixPlugin  extends CordovaPlugin {
         }else if(action.equals("age")){
             Log.v(LOG_TAG, "adBrixPlugin :  " + action);
             final int age = options.getInt(0);
-            Log.v(LOG_TAG, "adBrixPlugin age :  " + action);
+            Log.v(LOG_TAG, "adBrixPlugin age :  " + age);
             IgawCommon.setAge(age);
         }else if(action.equals("gender")){
             Log.v(LOG_TAG, "adBrixPlugin :  " + action);

@@ -38,6 +38,8 @@
          <source-file src="src/android/adbrix_strings.xml" target-dir="res/values" />
          <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
          <source-file src="src/android/MultipleInstallReceiver.java" target-dir="src/com/mscbrain/lib/tracking" />
+         <source-file src="libs/IgawAdbrix_v4.2.5a.jar" target-dir="libs/IgawAdbrix_v4.2.5a.jar" />
+         <source-file src="libs/IgawCommon_v4.3.1a.jar" target-dir="libs/IgawCommon_v4.3.1a.jar" />
     </platform>
 	<platform name="ios">
         <config-file target="config.xml" parent="/*">
