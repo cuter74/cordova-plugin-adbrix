@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-adbrix" version="0.9.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-adbrix" version="0.1.1">
     <name>adBrix</name>
     <description>adBrix tool</description>
     <license>Apache 2.0</license>
@@ -38,8 +38,8 @@
          <source-file src="src/android/adbrix_strings.xml" target-dir="res/values" />
          <source-file src="src/android/AdBrixPlugin.java" target-dir="src/com/mscbrain/lib/tracking" />
          <source-file src="src/android/MultipleInstallReceiver.java" target-dir="src/com/mscbrain/lib/tracking" />
-         <source-file src="https://github.com/cuter74/cordova-plugin-adbrix/raw/master/libs/IgawAdbrix_v4.2.5a.jar" target-dir="libs/IgawAdbrix_v4.2.5a.jar" />
-         <source-file src="https://github.com/cuter74/cordova-plugin-adbrix/raw/master/libs/IgawCommon_v4.3.1a.jar" target-dir="libs/IgawCommon_v4.3.1a.jar" />
+         <source-file src="/libs/IgawAdbrix_v4.2.5a.jar" target-dir="libs/IgawAdbrix_v4.2.5a.jar" />
+         <source-file src="/libs/IgawCommon_v4.3.1a.jar" target-dir="libs/IgawCommon_v4.3.1a.jar" />
     </platform>
 	<platform name="ios">
         <config-file target="config.xml" parent="/*">
