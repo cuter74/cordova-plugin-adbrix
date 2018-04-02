@@ -8,6 +8,7 @@
 #import "Adbrix.h"
 #import <Cordova/CDVPlugin.h>
 #import <AdBrix/AdBrix.h>
+#import <IgaworksCore/IgaworksCore.h>
 
 @implementation Adbrix
 
