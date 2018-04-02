@@ -9,8 +9,13 @@ Currently this plugin is compatible only with Android and iOS. Feel free to add 
 This plugin follows the Cordova 3.0 plugin spec, so it can be installed through the Cordova CLI in your existing Cordova project:
 
     cordova plugin add https://github.com/cuter74/cordova-plugin-adbrix
+    
 
 #How to use it
+add config.xml
+
+https://www.npmjs.com/package/cordova-plugin-cocoapod-support
+
 
 add mainactivity
 
